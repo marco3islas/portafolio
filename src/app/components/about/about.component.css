@@ -1,0 +1,80 @@
+
+.jumbotron{
+  box-sizing: border-box;
+  background-color: #141d27;
+  color: white;
+  padding: 20px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+.jumbotron h1{
+  letter-spacing: 10px;
+}
+.jumbotron h3{
+  letter-spacing: 6px;
+  text-transform: uppercase;
+}
+.jumbotron .container{
+  padding: 20px;
+}
+.jumbotron img{
+  width: 20%;
+  border-radius: 100%;
+  margin-right: 40px;
+  float: left;
+}
+.descripcion{
+  padding: 10px 0;
+  letter-spacing: 3px;
+  line-height: 3;
+  font-size: 18px;
+  width: 70%;
+}
+.lista{
+  padding: 40px; 
+  border: 1px solid dodgerblue;
+  box-sizing: border-box;
+  border-radius: 20px;
+  line-height: 2;
+  width: 60%;
+  font-size: 16px;
+  letter-spacing: 3px;
+  float: left;
+}
+.fa-html5, .fa-book-reader{
+  color: #e34f26;
+  font-size: 28px;
+}
+.fa-css3{
+  color: #002561;
+  font-size: 28px;
+}
+.fa-js-square{
+  color: #f7df1e;
+  font-size: 28px;
+}
+.fa-angular{
+  color: #b52e31;
+  font-size: 28px;
+}
+.fa-nodejs, .fa-chess{
+  color: #6cc24a;
+  font-size: 28px;
+}
+.fa-bootstrap{
+  color: purple;
+  font-size: 28px;
+}
+.fa-php, .fa-github, .fa-paw{
+  color: #8892be;
+  font-size: 28px;
+}
+.fa-wordpress-simple{
+  color: #21759b;
+  font-size: 28px;
+}
+.fa-git-square{
+  color: orangered;
+  font-size: 28px;
+}
+
