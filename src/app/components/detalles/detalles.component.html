@@ -1,0 +1,23 @@
+<div class="tarjeta animated fadeIn" *ngIf="proyecto" >
+  <h1 class="titulo">
+    {{ proyecto.nombre | uppercase}}
+    <small class="fecha">
+    </small>
+  </h1>
+  <hr>
+  
+  <div class="row">
+    <div class="col img">
+      <img [src]="proyecto.img" alt="proyecto.nombre">
+    </div>
+    <div class="col descripcion">
+      <p>
+      {{ proyecto.descripcion }}
+      </p>
+    <br>
+    <br>
+    <a [routerLink]="['/galeria']"  class='btn btnRegresar'><i class="fas fa-arrow-left"></i> Regresar</a>
+    <a href="{{ proyecto.direccion }}" target="_blank" class='btn btnOnline'><i class="fas fa-globe-americas"></i> Ver Online</a>
+    </div>
+  </div>
+</div>

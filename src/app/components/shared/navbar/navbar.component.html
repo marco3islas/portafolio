@@ -1,12 +1,14 @@
 <div class="nav-bar">
-            <img (click)='irHome' src="../../../../assets/img/logoRecorte4.png" class="logo" alt="Logo de Marco Islas">
-            <a href="#home" id="homeLink" class="link">HOME</a>
-            <a href="#servicios"   class="link" id="serviciosLink">SERVICIOS</a>
-            <a href="#about" class="link" id="aboutLink">ABOUT</a>
-
-
-            <a href="#galeria" class="link" id="galeriaLink">GALERIA</a>
-            <a href="#blog" class="link" id="blogLink">BLOG</a>
-            <a href="#contacto" class="link" id="contactoLink">CONTACTO</a>
+            <a [routerLink]="['bienvenida']"><img  src="../../../../assets/img/logoRecorte4.png" class="logo" alt="Logo de Marco Islas"></a>
+            <a [routerLink]="['bienvenida']" routerLinkActive='active' id="homeLink" class="link">HOME</a>
+            <a [routerLink]="['servicios']"  routerLinkActive='active' class="link" id="serviciosLink">SERVICIOS</a>
+            <a [routerLink]="['about']" routerLinkActive='active' class="link" id="aboutLink">ABOUT</a>
+            <a [routerLink]="['galeria']" routerLinkActive='active' class="link" id="galeriaLink">GALERIA</a>
+            <a [routerLink]="['blog']" routerLinkActive='active' class="link" id="blogLink">BLOG</a>
+            <a [routerLink]="['contacto']" routerLinkActive='active' class="link" id="contactoLink">CONTACTO</a>
+            <div >
+              <input id="buscar" class='buscar' type="text" name="buscar" placeholder="buscar" (keyup.enter)="buscarTermino(buscarTexto.value)" #buscarTexto>
+              <button (click)="buscarTermino(buscarTexto.value)" class="btn btnbuscar">Buscar</button>
+            </div>
             <!--span class="hamburguesa fas fa-bars"></span-->
         </div>

@@ -1,51 +1,50 @@
 [
     {
-      nombre: "Aquaman",
-      bio: "El poder más reconocido de Aquaman es la capacidad telepática para comunicarse con la vida marina, la cual puede convocar a grandes distancias.",
-      img: "assets/img/aquaman.png",
-      aparicion: "1941-11-01",
-      casa:"DC"
+      nombre: "Mascotas Exchange",
+      descripcion: "Pagina web que puede servir como blog o tienda hecha con HTML5, CSS3 y JavaScript.",
+      img: "assets/img/mascotasExchange.png",
+      direccion: "https://hardcore-allen-ed6546.netlify.app/"
     },
     {
-      nombre: "Batman",
-      bio: "Los rasgos principales de Batman se resumen en «destreza física, habilidades deductivas y obsesión». La mayor parte de las características básicas de los cómics han variado por las diferentes interpretaciones que le han dado al personaje.",
-      img: "assets/img/batman.png",
-      aparicion: "1939-05-01",
-      casa:"DC"
+      nombre: "BUSCANDO CASA",
+      descripcion: "Pagina que podria servir para bienes raices, realizada con HTML5, CSS3 y JavaScript.",
+      img: "assets/img/buscandocasas.png",
+      direccion: "https://kind-goodall-ffb882.netlify.app/"
     },
     {
-      nombre: "Daredevil",
-      bio: "Al haber perdido la vista, los cuatro sentidos restantes de Daredevil fueron aumentados por la radiación a niveles superhumanos, en el accidente que tuvo cuando era niño. A pesar de su ceguera, puede \"ver\" a través de un \"sexto sentido\" que le sirve como un radar similar al de los murciélagos.",
-      img: "assets/img/daredevil.png",
-      aparicion: "1964-01-01",
-      casa: "Marvel"
+      nombre: "Tenis Rafaga",
+      bio: "Este esta es una idea para una tienda de Tenis en linea esta pagina esta hecha con HTML5, CSS3, CSS GRID, y JavaScript."
+      img: "assets/img/tenisRafaga.png",
+      direccion: "https://sad-mahavira-7c78d0.netlify.app/",
     },
     {
-      nombre: "Hulk",
-      bio: "Su principal poder es su capacidad de aumentar su fuerza hasta niveles prácticamente ilimitados a la vez que aumenta su furia. Dependiendo de qué personalidad de Hulk esté al mando en ese momento (el Hulk Banner es el más débil, pero lo compensa con su inteligencia).",
-      img: "assets/img/hulk.png",
-      aparicion: "1962-05-01",
-      casa:"Marvel"
+      nombre: "Rento Bicis",
+      descripcion: "Pagina para renta de bicis y venta de souvenirs hecha con HTML5, Jquery, CSS3, JavaScript.",
+      img: "assets/img/bicisRenta.png",
+      direccion: "https://objective-knuth-b49afb.netlify.app/",
     },
     {
-      nombre: "Linterna Verde",
-      bio: "Poseedor del anillo de poder que posee la capacidad de crear manifestaciones de luz sólida mediante la utilización del pensamiento. Es alimentado por la Llama Verde (revisada por escritores posteriores como un poder místico llamado Starheart), una llama mágica contenida en dentro de un orbe (el orbe era en realidad un meteorito verde de metal que cayó a la Tierra, el cual encontró un fabricante de lámparas llamado Chang)",
-      img: "assets/img/linterna-verde.png",
-      aparicion: "1940-06-01",
-      casa: "DC"
+      nombre: "Cafeteria Mi Lugar",
+      descripcion: "El sitio web de Cafeteria mi Lugar es una pagina donde se muestra un ejemplo de un lugar comodo y agradable para pasar el rato con los amigos con un ejemplo de 'menu' y fotos de las personas que frecuentan 'Mi Lugar' hecho con HTML5, CSS3, JavaScript",
+      img: "assets/img/cafeteriaMilugar.png",
+      direccion: "https://objective-knuth-b49afb.netlify.app/",
     },
     {
-      nombre: "Spider-Man",
-      bio: "Tras ser mordido por una araña radiactiva, obtuvo los siguientes poderes sobrehumanos, una gran fuerza, agilidad, poder trepar por paredes. La fuerza de Spider-Man le permite levantar 10 toneladas o más. Gracias a esta gran fuerza Spider-Man puede realizar saltos íncreibles. Un \"sentido arácnido\", que le permite saber si un peligro se cierne sobre él, antes de que suceda. En ocasiones este puede llevar a Spider-Man al origen del peligro.",
-      img: "assets/img/spiderman.png",
-      aparicion: "1962-08-01",
-      casa: "Marvel"
+      nombre: "Juanito Travel",
+      descripcion: "Blog para un viajero, donde pueda anotar sus experiencias y compartir sus fotos, el blog puede llevar algo de publicidad para generar ingresos pasivos. Esta pagina web esta hecha con HTML5, CSS3, JavaScript, Jquery, BootStrap",
+      img: "assets/img/blogViajero.png",
+      direccion: "https://festive-goldberg-15f10e.netlify.app/index.html",
     },
     {
-      nombre: "Wolverine",
-      bio: "En el universo ficticio de Marvel, Wolverine posee poderes regenerativos que pueden curar cualquier herida, por mortal que ésta sea, además ese mismo poder hace que sea inmune a cualquier enfermedad existente en la Tierra y algunas extraterrestres . Posee también una fuerza sobrehumana, que si bien no se compara con la de otros superhéroes como Hulk, sí sobrepasa la de cualquier humano.",
-      img: "assets/img/wolverine.png",
-      aparicion: "1974-11-01",
-      casa: "Marvel"
-    }
+      nombre: "Blog de Viajes",
+      descripcion: "Blog de viajes: Otro ejemplo de como quedaria una pagina web para una agencia de viajes, hecha con:  HTML5, CSS3, JavaScript, Jquery",
+      img: "assets/img/blogViajes.png",
+      direccion: "https://festive-goldberg-15f10e.netlify.app/index.html",
+    },
+    {
+      nombre: "Blog De Cafe",
+      descripcion: "Blog de una amante del cafe hecho con HTML5, CSS3",
+      img: "assets/img/cafeteriaMilugar.png",
+      direccion: "https://objective-knuth-b49afb.netlify.app/",
+    },
   ];

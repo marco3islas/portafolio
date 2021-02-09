@@ -60,10 +60,11 @@
     color: white;
     cursor: pointer;
     padding-top: 4px;
-    border:2px solid white;
+    border:1px solid white;
     transition: all 2ms ease-in-out;
 }
 .botones .btn-portafolio{
+  border: 1px solid #832e38;
     background-color: #7A0513;
     color: #FFF;
     margin-left: 10px;
@@ -80,6 +81,6 @@
 }
 .btn:hover{
   border: 2px solid transparent;
-  filter: drop-shadow(0px 0px 3px gray);
+  filter: drop-shadow(0px 0px 1px gray);
 }
 

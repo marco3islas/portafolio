@@ -24,6 +24,25 @@
 .nav-bar a:hover, .nav-bar a:active, .nav-bar a:focus{
   border-top: 1px solid dodgerblue;
   background-color: rgba(240, 240,240,.8);
+}
+.active{
+  border-top: 1px solid dodgerblue;
+  background-color: rgba(240, 240,240,.8);
+
+}
+.buscar{
+  font-size: 18px;
+  border:1px solid dodgerblue;
+  border-radius: 8px;
+  color: black;
+  padding: 5px 3px;
+}
+.btnbuscar{
+  font-size: 18px;
+  border: none;
+  color: white;
+  background-color: dodgerblue;
+  padding: 5px 3px;
 
 }
 @media only screen and (max-width: 700px) {

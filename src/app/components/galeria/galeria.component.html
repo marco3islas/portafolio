@@ -1,55 +1,13 @@
-<div class="container">
-    <h2>Galeria</h2>
-    <p>Aquí tengo algunos ejemplos de lo que estoy haciendo. Puedes darles click para verlos funcionando.</p>
+<div class="animated fadeIn container">
+    <h1>Galeria</h1>
     <hr>
+    
+    <p>Aquí tengo algunos ejemplos de lo que estoy haciendo. Puedes darles click para verlos funcionando.</p>
     <div class="galeria grid">
-      <div class='item' id="item1">
-        <img src="../../../assets/img/mascotas_cel.svg" class="img1" alt="Captura de pantalla de Mascotas Exchange">
-        <div class="card-body">
-          <h5 class="card-title">Card Title</h5>
-          <p class="card-text">Elit itaque commodi omnis deleniti assumenda. Obcaecati?</p>
-          <a class="btn" href="#">Visitar sitio</a>
-        </div>
-      </div>
-      <div class='item' id="item2">
-        <img src="../../../assets/img/buscandoCasa.svg" class="img2" alt="Foto de Buscando Casa">
-        <div class="card-body">
-          <h5 class="card-title">Card Title</h5>
-          <p class="card-text">Elit itaque commodi omnis deleniti assumenda. Obcaecati?</p>
-          <a class="btn" href="#">Visitar sitio</a>
-        </div>
-      </div>
-      <div class='item' id="item3">
-        <img src="../../../assets/img/eShopDevices.svg" class="img3" alt="Foto de tienda en linea de tenis">
-        <div class="card-body">
-          <h5 class="card-title">Card Title</h5>
-          <p class="card-text">Elit itaque commodi omnis deleniti assumenda. Obcaecati?</p>
-          <a class="btn" href="#">Visitar sitio</a>
-        </div>
-      </div>
-      <div class='item' id="item4">
-        <img src="../../../assets/img/bicis_clean.svg" class="img4" alt="Foto del sitio bicisEnRenta">
-        <div class="card-body">
-          <h5 class="card-title">Card Title</h5>
-          <p class="card-text">Elit itaque commodi omnis deleniti assumenda. Obcaecati?</p>
-          <a class="btn" href="#">Visitar sitio</a>
-        </div>
-      </div>
-      <div class='item' id="item5">
-        <img src="../../../assets/img/barraCafe_search.svg" class="img5" alt="Foto del sitio Barra de Café">
-        <div class="card-body">
-          <h5 class="card-title">Card Title</h5>
-          <p class="card-text">Elit itaque commodi omnis deleniti assumenda. Obcaecati?</p>
-          <a class="btn" href="#">Visitar sitio</a>
-        </div>
-      </div>
-      <div class='item' id="item6">
-        <img src="../../../assets/img/blogViajero_overview.svg" class="img5" alt="Foto del sitio Barra de Café">
-        <div class="card-body">
-          <h5 class="card-title">Card Title</h5>
-          <p class="card-text">Elit itaque commodi omnis deleniti assumenda. Obcaecati?</p>
-          <a class="btn" href="#">Visitar sitio</a>
-        </div>
+      <div class='item animated fadeIn fast' id="item1" *ngFor="let portafolio of portafolio; let i = index">
+        <button (click)='verProyecto(i)'>
+            <img [src]="portafolio.img" class="img1 animated fadeIn" [alt]="portafolio.nombre">
+        </button>
       </div>
     </div>
 </div>

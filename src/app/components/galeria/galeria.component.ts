@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import {PortafolioService,  Proyecto } from 'src/app/servicios/portafolio.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-galeria',
@@ -9,7 +10,16 @@ import { Component, OnInit } from '@angular/core';
 
 export class GaleriaComponent implements OnInit{
 
-  constructor(){}
+  portafolio:Proyecto[] = [];
+
+  constructor( private portafolioService:PortafolioService,
+               private router:Router){
+
+  }
     ngOnInit(): void{
+      this.portafolio = this.portafolioService.getPortafolio();
+  }
+  verProyecto(idx:number){
+   this.router.navigate(['/detalles',idx]); 
   }
 }

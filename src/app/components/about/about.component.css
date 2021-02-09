@@ -1,11 +1,16 @@
 
 .jumbotron{
+  margin-top: 65px;
   box-sizing: border-box;
   background-color: #141d27;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: right bottom;
   color: white;
   padding: 20px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
-  height: 100vh;
 }
 .jumbotron h1{
   letter-spacing: 10px;
@@ -16,27 +21,30 @@
 }
 .jumbotron .container{
   padding: 20px;
-}
-.jumbotron img{
-  width: 20%;
-  border-radius: 100%;
-  margin-right: 40px;
-  float: left;
+  width: 100%;
+  box-sizing: border-box;
 }
 .descripcion{
   padding: 10px 0;
   letter-spacing: 3px;
   line-height: 3;
   font-size: 18px;
-  width: 70%;
+  width: auto;
 }
-.lista{
+article{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+article .lista{
+  width: 48%;
   padding: 40px; 
   border: 1px solid dodgerblue;
   box-sizing: border-box;
   border-radius: 20px;
   line-height: 2;
-  width: 60%;
+  background-color: rgba(0, 0, 0,.8);
   font-size: 16px;
   letter-spacing: 3px;
   float: left;
@@ -76,5 +84,13 @@
 .fa-git-square{
   color: orangered;
   font-size: 28px;
+}
+article .myself{
+  width: 48%;
+  border-radius: 20px;
+}
+article img{
+  width: 100%;
+  border-radius: 20px;
 }
 
