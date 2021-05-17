@@ -1,11 +1,11 @@
-<div class="animated fadeIn container">
-    <h1>Galeria</h1>
+<div class="animated fadeIn container-fluid">
+    <h1>Portafolio</h1>
     <hr>
     
     <p>Aquí tengo algunos ejemplos de lo que estoy haciendo. Puedes darles click para verlos funcionando.</p>
     <div class="galeria grid">
       <div class='item animated fadeIn fast' id="item1" *ngFor="let portafolio of portafolio; let i = index">
-        <button (click)='verProyecto(i)'>
+        <button (click)='verProyecto(i)' (keyup)="verProyecto(i)">
             <img [src]="portafolio.img" class="img1 animated fadeIn" [alt]="portafolio.nombre">
         </button>
       </div>

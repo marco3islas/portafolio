@@ -1,4 +1,4 @@
-<div class="tarjeta animated fadeIn" *ngIf="proyecto" >
+<div class="tarjeta animated fadeIn container-fluid" *ngIf="proyecto" >
   <h1 class="titulo">
     {{ proyecto.nombre | uppercase}}
     <small class="fecha">
@@ -16,8 +16,8 @@
       </p>
     <br>
     <br>
-    <a [routerLink]="['/galeria']"  class='btn btnRegresar'><i class="fas fa-arrow-left"></i> Regresar</a>
-    <a href="{{ proyecto.direccion }}" target="_blank" class='btn btnOnline'><i class="fas fa-globe-americas"></i> Ver Online</a>
+    <a [routerLink]="['/galeria']"  class='btn btnRegresar'><i class="fas fa-arrow-left"></i> Atras</a>
+    <a href="{{ proyecto.direccion }}" target="_blank" class='btn btnOnline'><i class="fas fa-globe-americas"></i> Online</a>
     </div>
   </div>
 </div>

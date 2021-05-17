@@ -9,7 +9,7 @@
         No existe el termino: {{termino}} en la base de datos... :(
         </p>
   </div>
-  <div class='tarjeta' *ngFor='let proyecto of proyecto; let i = index'>
+  <div class='tarjeta my-4' *ngFor='let proyecto of proyecto; let i = index'>
   <h1 class="titulo">
       {{ proyecto.nombre }}
     <small class="fecha">
@@ -18,16 +18,16 @@
 
   
   <div class="row" >
-    <div class="col img">
-      <img [src]="proyecto.img" alt="proyecto.nombre">
+    <div class="col-12 col-lg-6">
+      <img [src]="proyecto.img" class="img-thumbnail" alt="proyecto.nombre">
     </div>
-    <div class="col descripcion">
+    <div class="col-12 col-lg-6 descripcion my-3">
       <p>
       {{ proyecto.descripcion }}
       </p>
     <br>
     <br>
-    <a [routerLink]="['/galeria']"  class='btn btnRegresar'><i class="fas fa-arrow-left"></i> Regresar</a>
+    <a [routerLink]="['/galeria']"  class='btn btnRegresar'><i class="fas fa-arrow-left"></i> Atras</a>
     <a href="{{ proyecto.direccion }}" target="_blank" class='btn btnOnline'><i class="fas fa-globe-americas"></i> Online</a>
     </div>
   </div>

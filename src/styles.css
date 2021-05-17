@@ -4,7 +4,17 @@
   background-color: #141d27;
   width: auto;
 }
-h1, h2, h4, h4{
+.pagenofound{
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2, h3, h4{
   font-family: 'Bodoni Moda', 'serif;', cursive;
   letter-spacing: 6px;
   color: white;
@@ -14,7 +24,7 @@ p, span{
 }
 .btn{
   width: 150px;
-    height: 45px;
+    height: auto;
     font-size: 24px;
     justify-content: center;
     align-items: center;
@@ -25,6 +35,16 @@ p, span{
     padding-top: 4px;
     border: 1px solid white;
     transition: all 2ms ease-in-out;
+    text-decoration: none;
+}
+.btn-back{
+    background-color: #7A0513;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn-back:hover{
+    border: none;
+    filter: drop-shadow(0 0 1px gray);
 }
 .animated {
   -webkit-animation-duration: 1s;
@@ -50,6 +70,20 @@ p, span{
   }
 }
 
-.fadeIn {
-  animation-name: fadeIn;
+.fadeOut {
+  animation-name: fadeOut;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut{
+  animation-name: fadeOut;
+  display: none;
 }

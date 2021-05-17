@@ -1,7 +1,4 @@
-.container{
-  margin-top: 60px;
-  display: flex;
-  flex-direction: column;
+.container-fluid{
   background-color: #141d27;
   background-image: url('../../../assets/img/developer.svg');
   background-repeat: no-repeat;
@@ -9,17 +6,11 @@
   background-size: 400px;
   background-attachment: fixed;
   font-family: Roboto, sans-serif;
-  padding: 20px;
 }
 hr{
   width: 100%;
 }
-.container h2{
-  font-size: 50px;
-  letter-spacing: 8px;
-  text-align: left;
-}
-.container p{
+.container-fluid p{
   color: white;
   font-size: 18px;
 }
@@ -54,4 +45,17 @@ button{
 .item img:hover{
   transform: scale(1.05);
   box-shadow: 1px 1px 4px rgba(0,0,0,.5);
+}
+
+@media only screen and (max-width: 800px){
+    .item{
+        width: 300px;
+    }
+
+}
+@media only screen and (max-width: 600px){
+    .item{
+        width: 230px;
+    }
+
 }

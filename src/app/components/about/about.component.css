@@ -1,13 +1,11 @@
 
 .jumbotron{
-  margin-top: 65px;
   box-sizing: border-box;
   background-color: #141d27;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: auto;
   background-attachment: fixed;
-  background-size: cover;
-  background-position: right bottom;
+  background-position: bottom left;
   color: white;
   padding: 20px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -35,10 +33,11 @@ article{
   display: flex;
   width: 100%;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 article .lista{
-  width: 48%;
+  width: 50%;
   padding: 40px; 
   border: 1px solid dodgerblue;
   box-sizing: border-box;
@@ -47,7 +46,7 @@ article .lista{
   background-color: rgba(0, 0, 0,.8);
   font-size: 16px;
   letter-spacing: 3px;
-  float: left;
+  float: right;
 }
 .fa-html5, .fa-book-reader{
   color: #e34f26;
@@ -86,11 +85,37 @@ article .lista{
   font-size: 28px;
 }
 article .myself{
-  width: 48%;
+  width: 300px;
   border-radius: 20px;
+  float: left;
 }
 article img{
-  width: 100%;
-  border-radius: 20px;
+  width: 50%;
+  border-radius: 50%;
 }
-
+@media only screen and (max-width: 900px){
+  article .lista{
+      width: 100%;
+      padding: 8px;
+      list-style: none;
+  }
+@media only screen and (max-width: 400px){
+    .jumbotron h1{
+        letter-spacing: 2.5px;
+    }
+    .jumbotron h3{
+        letter-spacing: 2px;
+    }
+    .jumbotron .descripcion{
+        letter-spacing: 1.5px;
+        line-height: 1.8;
+        margin-bottom: 8px;
+    }
+    article .lista h3{
+        color: dodgerblue;
+        font-size: 18px;
+        letter-spacing: 1.2px;
+        text-justify: justify;
+    }
+}
+}

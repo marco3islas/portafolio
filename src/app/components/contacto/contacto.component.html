@@ -1,22 +1,53 @@
-  <form action="" class="animated fadeIn fast">
-    <div class="grid">
-      <header>
-        <h2>Contacto</h2>
-      </header>
-      <div class="item1">
-        <label for="name">Nombre:</label>
-        <input class='item' id="name" type="text" name="name" placeholder="Escribe aqui tu nombre">
-      </div>
-      <div class="item2">
-        <label for="email">Email:</label>
-        <input class='item' id="email" type="email" name="email" placeholder="Escribe aqui tu Email">
-      </div>
-      <div class="item3">
-        <label for="comentarios">Comentarios</label>
-        <textarea id="comentarios" name="comentarios" cols="50" rows="10"></textarea>
-      </div>
-      <div class="item4">
-        <input class="btn" type="submit" value="Enviar">
-      </div>
+<div class="container">
+  <form autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()" class="p-5">
+    <h2>Contacto</h2>
+    <div class="row">
+    <div class="mb-3 col-12 col-md-6 animated fadeIn fast">
+    <label for="name" class="form-label text-light">Nombre</label>
+    <input
+    type="text" 
+    class="form-control" 
+    id="name"
+    formControlName="name" 
+    [class.is-invalid]='nameNoValido'
+    aria-describedby="name">
+    <div id="name" class="form-text">Nunca compartiremos tus datos con alguien.</div>
+    <small *ngIf="nameNoValido" class="text-danger">Ingresa tu nombre con un minimo de 5 letras</small>
+  </div>
+    <div class="mb-3 col-12 col-md-6 animated fadeIn fast">
+    <label for="email" class="form-label text-light">Email address</label>
+    <input 
+    type="email" 
+    class="form-control" 
+    id="email" 
+    formControlName="email" 
+    [class.is-invalid]='emailNoValido'
+    aria-describedby="emailHelp">
+    <small *ngIf="emailNoValido" class="text-danger">Ingresa un email Valido</small>
+  </div>
     </div>
+  <div class="row">
+  <div class="mb-3 col">
+    <label for="comentarios" class="form-label text-light">Comentarios</label>
+    <textarea 
+      class="form-control" 
+      formControlName="comentarios"
+      [class.is-invalid]='comentariosNoValido'
+      id="comentarios">
+    </textarea>
+      <small *ngIf="comentariosNoValido" class="text-danger">Ingresa al menos
+        tres palabras </small>
+  </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
+  <hr>
+  <pre class="text-white">
+Estado del Formilario: {{ forma.valid }}
+<br>
+Status: {{ forma.status }}
+  </pre>
+  <pre class="text-white">
+{{ forma.value | json }}
+  </pre>
+</div>

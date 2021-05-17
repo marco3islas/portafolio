@@ -8,6 +8,10 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
+    mostrar = true;
+
+
+
   constructor(private router: Router) { }
 
   ngOnInit(): void {
@@ -15,6 +19,7 @@ export class NavbarComponent implements OnInit {
   buscarTermino( termino:string ){
     this.router.navigate(['/buscar', termino]);
   }
+
 
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {PortafolioService,  Proyecto } from 'src/app/servicios/portafolio.service';
+import {PortafolioService} from 'src/app/servicios/portafolio.service';
 import { Router } from '@angular/router';
+import {ProyectoModel} from 'src/app/models/proyecto.models';
 
 @Component({
   selector: 'app-galeria',
@@ -10,7 +11,9 @@ import { Router } from '@angular/router';
 
 export class GaleriaComponent implements OnInit{
 
-  portafolio:Proyecto[] = [];
+    portafolio: ProyectoModel[] = [];
+
+//  portafolio:Proyecto[] = [];
 
   constructor( private portafolioService:PortafolioService,
                private router:Router){

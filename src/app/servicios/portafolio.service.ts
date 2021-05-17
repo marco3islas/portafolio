@@ -20,7 +20,13 @@ export class PortafolioService{
       direccion: 'https://buscandocasa.netlify.app/'
     },
     {
-      nombre: 'Tenis Rafaga',
+      nombre: 'Mis Heroes',
+      descripcion: 'Aplicacion hecha en Angular, con HTML5, CSS3, TypeScript y que se conecta a la base de datos de Marvel Comics.',
+      img: 'assets/img/heroesApp.png',
+      direccion: 'https://mis-heroes.netlify.app/'
+    },
+    {
+      nombre: 'Tenis Rafaga, tienda en linea',
       descripcion: 'Este esta es una idea para una tienda de Tenis en linea esta pagina esta hecha con HTML5, CSS3, CSS GRID, y JavaScript.',
       img: 'assets/img/tenisRafaga.png',
       direccion: 'https://tenisrafaga.netlify.app/',
@@ -35,7 +41,7 @@ export class PortafolioService{
       nombre: 'Cafeteria Mi Lugar',
       descripcion: 'El sitio web de Cafeteria mi Lugar es una pagina donde se muestra un ejemplo de un lugar comodo y agradable para pasar el rato con los amigos con un ejemplo de menus y fotos de las personas que frecuentan Mi Lugar hecho con HTML5, CSS3, JavaScript',
       img: 'assets/img/cafeteriaMilugar.png',
-      direccion: 'https://objective-knuth-b49afb.netlify.app/',
+      direccion: 'https://cafe-mi-lugar.netlify.app/#/about',
     },
     {
       nombre: 'Juanito Travel',
@@ -67,14 +73,14 @@ getPortafolios( idx: string ){
 }
 buscarTermino( termino:string ):Proyecto[]{
 
-  let portafolioArr:Proyecto[] = [];
+  const portafolioArr:Proyecto [] = [];
 
   termino = termino.toLowerCase();
 
   for(const portafolio of this.portafolio){
-    const nombre = portafolio.nombre.toLowerCase();
+    const descripcion = portafolio.descripcion.toLowerCase();
 
-    if( nombre.indexOf( termino ) >= 0 ){
+    if( descripcion.indexOf( termino ) >= 0 ){
       portafolioArr.push( portafolio );
     }
   }
@@ -85,6 +91,7 @@ buscarTermino( termino:string ):Proyecto[]{
 
 
 export interface Proyecto{
+    id?: string;
   nombre: string;
   descripcion: string;
   img: string;
