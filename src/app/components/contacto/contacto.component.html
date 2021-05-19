@@ -1,8 +1,10 @@
-<div class="container">
-  <form autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()" class="p-5">
+<div class="container contenedor-contacto">
     <h2>Contacto</h2>
-    <div class="row">
+    <hr>
+    
+    <div class="row contacto container-sm-fluid container">
     <div class="mb-3 col-12 col-md-6 animated fadeIn fast">
+      <form autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()">
     <label for="name" class="form-label text-light">Nombre</label>
     <input
     type="text" 
@@ -13,8 +15,7 @@
     aria-describedby="name">
     <div id="name" class="form-text">Nunca compartiremos tus datos con alguien.</div>
     <small *ngIf="nameNoValido" class="text-danger">Ingresa tu nombre con un minimo de 5 letras</small>
-  </div>
-    <div class="mb-3 col-12 col-md-6 animated fadeIn fast">
+    
     <label for="email" class="form-label text-light">Email address</label>
     <input 
     type="email" 
@@ -24,10 +25,7 @@
     [class.is-invalid]='emailNoValido'
     aria-describedby="emailHelp">
     <small *ngIf="emailNoValido" class="text-danger">Ingresa un email Valido</small>
-  </div>
-    </div>
-  <div class="row">
-  <div class="mb-3 col">
+
     <label for="comentarios" class="form-label text-light">Comentarios</label>
     <textarea 
       class="form-control" 
@@ -37,17 +35,13 @@
     </textarea>
       <small *ngIf="comentariosNoValido" class="text-danger">Ingresa al menos
         tres palabras </small>
-  </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
-  <hr>
-  <pre class="text-white">
-Estado del Formilario: {{ forma.valid }}
-<br>
-Status: {{ forma.status }}
-  </pre>
-  <pre class="text-white">
-{{ forma.value | json }}
-  </pre>
+  <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+  </div>
+  <div class="col-12 col-lg-6 datosContacto container-fluid py-4 align-items-center">
+    <div class="info email alert alert-primary"><span class="fa fa-envelope"> marco3islas@gmail.com</span></div>
+    <div class="info telegram alert alert-info"><span class="fab fa-telegram"></span> 55 50 69 31 86 </div>
+    <div class="info github alert alert-warning"> <span class="fab fa-github"></span> https://github.com/marco3islas</div>
+  </div>
+  </div>
 </div>

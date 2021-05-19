@@ -1,8 +1,6 @@
-.container{
-  margin-top: 70px;
-  padding: 20px;
-  background-color: #141d27;
-  width: auto;
+body {
+    background: #141d27;
+    color: white;
 }
 .pagenofound{
     color: white;

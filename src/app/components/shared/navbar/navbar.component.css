@@ -1,5 +1,5 @@
 .nav-bar{
-  position: fixed;
+  position: fixed !important;
   top: 0;
   left: 0;
   width: 100%;
@@ -8,7 +8,12 @@
   align-items: center;
   justify-content: space-around;
   background-color: #F8F8F8;
+  filter: drop-shadow(1px 1px 2px black);
   z-index: 100;
+}
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
 }
 .logoBar {
     display: flex;
@@ -65,7 +70,7 @@
     align-items: flex-start;
     height: auto;
     justify-content: flex-start;
-    padding: 0 20px;
+    padding: 10px 20px;
   }
   .menu{
     flex-direction: column;

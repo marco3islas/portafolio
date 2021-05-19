@@ -1,4 +1,4 @@
-<div class="tarjeta animated fadeIn container-fluid" *ngIf="proyecto" >
+<div class="tarjeta animated fadeIn container-fluid" *ngIf="proyecto">
   <h1 class="titulo">
     {{ proyecto.nombre | uppercase}}
     <small class="fecha">
@@ -6,8 +6,8 @@
   </h1>
   <hr>
   
-  <div class="row">
-    <div class="col img">
+  <div class="row align-items-center">
+    <div class="col imagen">
       <img [src]="proyecto.img" alt="proyecto.nombre">
     </div>
     <div class="col descripcion">

@@ -8,10 +8,22 @@ export class PortafolioService{
   private portafolio:Proyecto [ ] = [
 
     {
+      nombre: 'Rento Bicis',
+      descripcion: 'Pagina para renta de bicis y venta de souvenirs hecha con HTML5, Jquery, CSS3, JavaScript.',
+      img: 'assets/img/bicisRenta.png',
+      direccion: 'https://rentobicis.netlify.app/',
+    },
+    {
+      nombre: 'Juanito Travel',
+      descripcion: 'Blog para un viajero, donde pueda anotar sus experiencias y compartir sus fotos, el blog puede llevar algo de publicidad para generar ingresos pasivos. Esta pagina web esta hecha con HTML5, CSS3, JavaScript, Jquery, BootStrap',
+      img: 'assets/img/blogViajero.png',
+      direccion: 'https://blogdel-viajero.netlify.app/index.html',
+    },
+    {
       nombre: 'Mascotas Exchange',
       descripcion: 'Pagina web que puede servir como blog o tienda hecha con HTML5, CSS3 y JavaScript.',
-      img: 'assets/img/mascotasExchange.png',
-      direccion: 'https://hardcore-allen-ed6546.netlify.app/'
+      img: 'assets/img/mascotaExchange.png',
+      direccion: 'https://mascotaexchange.netlify.app/'
     },
     {
       nombre: 'BUSCANDO CASA',
@@ -32,22 +44,10 @@ export class PortafolioService{
       direccion: 'https://tenisrafaga.netlify.app/',
     },
     {
-      nombre: 'Rento Bicis',
-      descripcion: 'Pagina para renta de bicis y venta de souvenirs hecha con HTML5, Jquery, CSS3, JavaScript.',
-      img: 'assets/img/bicisRenta.png',
-      direccion: 'https://rentobicis.netlify.app/',
-    },
-    {
       nombre: 'Cafeteria Mi Lugar',
       descripcion: 'El sitio web de Cafeteria mi Lugar es una pagina donde se muestra un ejemplo de un lugar comodo y agradable para pasar el rato con los amigos con un ejemplo de menus y fotos de las personas que frecuentan Mi Lugar hecho con HTML5, CSS3, JavaScript',
       img: 'assets/img/cafeteriaMilugar.png',
       direccion: 'https://cafe-mi-lugar.netlify.app/#/about',
-    },
-    {
-      nombre: 'Juanito Travel',
-      descripcion: 'Blog para un viajero, donde pueda anotar sus experiencias y compartir sus fotos, el blog puede llevar algo de publicidad para generar ingresos pasivos. Esta pagina web esta hecha con HTML5, CSS3, JavaScript, Jquery, BootStrap',
-      img: 'assets/img/blogViajero.png',
-      direccion: 'https://blogdel-viajero.netlify.app/index.html',
     },
     {
       nombre: 'Blog de Viajes',

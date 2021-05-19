@@ -1,13 +1,13 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light nav-bar">
   <div class="container-fluid">
             <a [routerLink]="['bienvenida']"><img  src="../../../../assets/img/logoRecorte4.png" class="logo navbar-brand" alt="Logo de Marco Islas"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="fas fa-bars"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-6">
         <li class="nav-item">
-            <a [routerLink]="['bienvenida']" routerLinkActive='active' id="homeLink" class="nav-link link">HOME</a>
+            <a [routerLink]="['home']" routerLinkActive='active' id="homeLink" class="nav-link link">HOME</a>
         </li>
         <li class="nav-item">
             <a [routerLink]="['about']" routerLinkActive='active' class="link" id="aboutLink">ABOUT</a>
@@ -22,7 +22,7 @@
             <a [routerLink]="['contacto']" routerLinkActive='active' class="link" id="contactoLink">CONTACTO</a>
         </li>
       </ul>
-      <form class="d-flex">
+      <form class="d-flex col-12 col-lg-4">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" (keyup.enter)="buscarTermino(buscarTexto.value)" #buscarTexto>
         <button class="btn btn-primary" type="submit" (click)="buscarTermino(buscarTexto.value)">Search</button>
       </form>

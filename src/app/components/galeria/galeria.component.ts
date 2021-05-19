@@ -12,15 +12,17 @@ import {ProyectoModel} from 'src/app/models/proyecto.models';
 export class GaleriaComponent implements OnInit{
 
     portafolio: ProyectoModel[] = [];
+    loading?: boolean;
 
-//  portafolio:Proyecto[] = [];
 
   constructor( private portafolioService:PortafolioService,
                private router:Router){
+       this.loading = true;
 
   }
     ngOnInit(): void{
-      this.portafolio = this.portafolioService.getPortafolio();
+        this.portafolio = this.portafolioService.getPortafolio();
+        this.loading = false;
   }
   verProyecto(idx:number){
    this.router.navigate(['/detalles',idx]); 
