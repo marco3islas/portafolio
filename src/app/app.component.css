@@ -1,7 +1,7 @@
 .hero{
     background-color: #35364e;
     border: 1px solid red;
-    background-image: url('../../../portafolio/src/assets/img/cdmxNoche.jpg');
+    background-image: url('../assets/img/cdmxNoche.jpg');
     background-repeat: no-repeat;
     width: 100%;
     height: 520px;
