@@ -13,7 +13,6 @@ body {
     align-items: center;
 }
 h1, h2, h3, h4{
-  font-family: 'Bodoni Moda', 'serif;', cursive;
   letter-spacing: 6px;
   color: white;
 }
@@ -67,6 +66,22 @@ p, span{
     opacity: 1;
   }
 }
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+.flash {
+  animation-name: flash;
+}
 
 .fadeOut {
   animation-name: fadeOut;
@@ -80,7 +95,26 @@ p, span{
     opacity: 0;
   }
 }
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+  animation-timing-function: ease-in-out;
+}
 .fadeOut{
   animation-name: fadeOut;
   display: none;

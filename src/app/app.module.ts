@@ -9,25 +9,16 @@ import {ReactiveFormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
-import {HomeComponent} from './components/home/home.component';
-import {AboutComponent} from './components/about/about.component';
-import {GaleriaComponent} from './components/galeria/galeria.component';
-import {ConctactoComponent} from './components/contacto/contacto.component';
-import {DetallesComponent} from './components/detalles/detalles.component';
-import {BuscarComponent} from './components/buscar/buscar.component';
 import { ProyectoTarjetaComponent } from './components/proyecto-tarjeta/proyecto-tarjeta.component';
 import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 import { LoadingComponent } from './components/shared/loading/loading.component';
+import {BuscarComponent} from './components/buscar/buscar.component';
+import {PagesModule} from './components/pages/pages.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    HomeComponent,
-    AboutComponent,
-    GaleriaComponent,
-    ConctactoComponent,
-    DetallesComponent,
     BuscarComponent,
     ProyectoTarjetaComponent,
     NopagefoundComponent,
@@ -36,6 +27,7 @@ import { LoadingComponent } from './components/shared/loading/loading.component'
   imports: [
     BrowserModule,
     APP_ROUTING,
+      PagesModule,
     ReactiveFormsModule
   ],
   providers: [

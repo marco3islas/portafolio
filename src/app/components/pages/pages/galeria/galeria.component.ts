@@ -17,10 +17,10 @@ export class GaleriaComponent implements OnInit{
 
   constructor( private portafolioService:PortafolioService,
                private router:Router){
-       this.loading = true;
 
   }
     ngOnInit(): void{
+        this.loading = true;
         this.portafolio = this.portafolioService.getPortafolio();
         this.loading = false;
   }

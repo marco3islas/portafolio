@@ -3,7 +3,7 @@
     <hr>
     
     <div class="row contacto container-sm-fluid container">
-    <div class="mb-3 col-12 col-md-6 animated fadeIn fast">
+    <div class="mb-5 col-12 animated fadeIn fast">
       <form autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()">
     <label for="name" class="form-label text-light">Nombre</label>
     <input
@@ -38,10 +38,16 @@
   </form>
   <button type="submit" class="btn btn-primary mt-3">Enviar</button>
   </div>
-  <div class="col-12 col-lg-6 datosContacto container-fluid py-4 align-items-center">
-    <div class="info email alert alert-primary"><span class="fa fa-envelope"> marco3islas@gmail.com</span></div>
-    <div class="info telegram alert alert-info"><span class="fab fa-telegram"></span> 55 50 69 31 86 </div>
-    <div class="info github alert alert-warning"> <span class="fab fa-github"></span> https://github.com/marco3islas</div>
+  <div class=" mt-5 col-12 datosContacto container-fluid py-4 align-items-center">
+    <div class="info email">
+      <span class="fa fa-envelope"> 
+      </span>
+        marco3islas
+        <span class="fas fa-at"></span>
+        <span class="fab fa-google"></span>mail.com
+    </div>
+    <div class="info telegram"><span class="fab fa-telegram"></span> 55 50 69 31 86 </div>
+    <div class="info github"> <span class="fab fa-github"></span> https://github.com/marco3islas</div>
   </div>
   </div>
 </div>

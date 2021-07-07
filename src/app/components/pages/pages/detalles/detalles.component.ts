@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { PortafolioService } from '../../servicios/portafolio.service';
+import { ActivatedRoute, Router } from '@angular/router';
+import { PortafolioService } from '../../../../servicios/portafolio.service';
 
 @Component({
   selector: 'app-detalles',
@@ -12,6 +12,7 @@ export class DetallesComponent{
   proyecto:any = [] ;
 
   constructor(private activatedRoute: ActivatedRoute,
+              private router: Router,
               private portafolioService: PortafolioService
 ){
     this.activatedRoute.params.subscribe( params => {
@@ -20,4 +21,7 @@ export class DetallesComponent{
       
     });
   }
+    verPortafolio(){
+        this.router.navigate(['/galeria']);
+    }
 }

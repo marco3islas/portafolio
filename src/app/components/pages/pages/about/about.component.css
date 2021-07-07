@@ -1,6 +1,8 @@
 
 .jumbotron{
   box-sizing: border-box;
+  position: absolute;
+  top: 100%;
   margin-top: 90px;
   background-color: #141d27;
   background-repeat: no-repeat;
@@ -86,19 +88,21 @@ article .lista{
   font-size: 28px;
 }
 article .myself{
-  width: 300px;
-  border-radius: 20px;
-  float: left;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 20px;
+    float: left;
 }
 article img{
-  width: 50%;
-  border-radius: 50%;
+   width: 100%;
+   border: 1px solid dodgerblue;
+   border-radius: 20px;
 }
 @media only screen and (max-width: 900px){
-  article .lista{
-      width: 100%;
-      padding: 8px;
-      list-style: none;
+    article .lista{
+        width: 100%;
+        padding: 8px;
+        list-style: none;
   }
 @media only screen and (max-width: 400px){
     .jumbotron h1{
