@@ -7,12 +7,7 @@ export class PortafolioService{
 
   private portafolio:Proyecto [ ] = [
 
-    {
-      nombre: 'Rento Bicis',
-      descripcion: 'Pagina para renta de bicis y venta de souvenirs hecha con HTML5, Jquery, CSS3, JavaScript.',
-      img: 'assets/img/bicisRenta.png',
-      direccion: 'https://rentobicis.netlify.app/',
-    },
+   
     {
       nombre: 'Juanito Travel',
       descripcion: 'Blog para un viajero, donde pueda anotar sus experiencias y compartir sus fotos, el blog puede llevar algo de publicidad para generar ingresos pasivos. Esta pagina web esta hecha con HTML5, CSS3, JavaScript, Jquery, BootStrap',
@@ -30,6 +25,18 @@ export class PortafolioService{
       descripcion: 'Pagina que podria servir para bienes raices, realizada con HTML5, CSS3 y JavaScript.',
       img: 'assets/img/buscandocasas.png',
       direccion: 'https://buscandocasa.netlify.app/'
+    },
+    {
+      nombre: 'Blog De Cafe',
+      descripcion: 'Blog de una amante del cafe hecho con HTML5, CSS3',
+      img: 'assets/img/barraCafe.png',
+      direccion: 'https://barra-cafe.netlify.app',
+    },
+     {
+      nombre: 'Rento Bicis',
+      descripcion: 'Pagina para renta de bicis y venta de souvenirs hecha con HTML5, Jquery, CSS3, JavaScript.',
+      img: 'assets/img/bicisRenta.png',
+      direccion: 'https://rentobicis.netlify.app/',
     },
     {
       nombre: 'Mis Heroes',
@@ -55,12 +62,7 @@ export class PortafolioService{
       img: 'assets/img/blogViajes.png',
       direccion: 'https://blogde-viajes.netlify.app/',
     },
-    {
-      nombre: 'Blog De Cafe',
-      descripcion: 'Blog de una amante del cafe hecho con HTML5, CSS3',
-      img: 'assets/img/barraCafe.png',
-      direccion: 'https://blogde-cafe.netlify.app/',
-    },
+    
   ];
   constructor(){
     console.log('Servicio listo para usar!');
