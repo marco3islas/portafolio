@@ -6,13 +6,13 @@
 }
 .row{
   margin-top: 40px;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.col {
+  margin: auto 0;
 }
 
-.col{
-  width: 48%; 
-}
 .imagen{
   width: 80%;
   background-color: transparent;
@@ -59,13 +59,7 @@ a{
 }
 @media only screen and (max-width: 600px){
     .row{
-        flex-direction: column;
+      grid-template-columns: 1fr;
+      margin: 0 auto;
     }
-    .descripcion{
-        width: 100%;
-        padding: 20px;
-        text-align: justify;
-    }
-    
-
 }
