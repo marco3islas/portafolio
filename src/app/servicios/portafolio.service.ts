@@ -5,9 +5,7 @@ import {Injectable} from '@angular/core';
 @Injectable()
 export class PortafolioService{
 
-  private portafolio:Proyecto [ ] = [
-
-   
+  private portafolio: Proyecto [ ] = [
     {
       nombre: 'Juanito Travel',
       descripcion: 'Blog para un viajero, donde pueda anotar sus experiencias y compartir sus fotos, el blog puede llevar algo de publicidad para generar ingresos pasivos. Esta pagina web esta hecha con HTML5, CSS3, JavaScript, Jquery, BootStrap',
@@ -15,9 +13,15 @@ export class PortafolioService{
       direccion: 'https://blogdel-viajero.netlify.app/index.html',
     },
     {
+      nombre: 'Festival-Musica',
+      descripcion: 'Este es un proyecto para un festival musical. Esta pagina web esta hecha con HTML5, CSS3, JavaScript',
+      img: 'assets/img/festival-musica.webp',
+      direccion: 'https://rock-djm-festival.netlify.app/',
+    },
+    {
       nombre: 'Mascotas Exchange',
       descripcion: 'Pagina web que puede servir como blog o tienda hecha con HTML5, CSS3 y JavaScript.',
-      img: 'assets/img/mascotaExchange.png',
+      img: 'assets/img/mascotas.webp',
       direccion: 'https://mascotaexchange.netlify.app/'
     },
     {
@@ -35,7 +39,7 @@ export class PortafolioService{
      {
       nombre: 'Rento Bicis',
       descripcion: 'Pagina para renta de bicis y venta de souvenirs hecha con HTML5, Jquery, CSS3, JavaScript.',
-      img: 'assets/img/bicisRenta.png',
+      img: 'assets/img/bicis.webp',
       direccion: 'https://rentobicis.netlify.app/',
     },
     {
@@ -62,27 +66,26 @@ export class PortafolioService{
       img: 'assets/img/blogViajes.png',
       direccion: 'https://blogde-viajes.netlify.app/',
     },
-    
   ];
   constructor(){
     console.log('Servicio listo para usar!');
   }
-  getPortafolio():Proyecto[]{
+  getPortafolio(): Proyecto[]{
     return this.portafolio;
   }
-getPortafolios( idx: string ){
+  getPortafolios( idx: string ){
   return this.portafolio[idx];
 }
-buscarTermino( termino:string ):Proyecto[]{
+buscarTermino( termino: string ):Proyecto[]{
 
-  const portafolioArr:Proyecto [] = [];
+  const portafolioArr: Proyecto [] = [];
 
   termino = termino.toLowerCase();
 
-  for(const portafolio of this.portafolio){
+  for (const portafolio of this.portafolio){
     const descripcion = portafolio.descripcion.toLowerCase();
 
-    if( descripcion.indexOf( termino ) >= 0 ){
+    if (descripcion.indexOf( termino ) >= 0 ){
       portafolioArr.push( portafolio );
     }
   }
