@@ -66,6 +66,24 @@ export class PortafolioService{
       img: 'assets/img/blogViajes.png',
       direccion: 'https://blogde-viajes.netlify.app/',
     },
+    {
+      nombre: 'Ahorcado',
+      descripcion: 'El tipico juego del Ahorcado, hecho en React',
+      img: 'assets/img/ahorcado2.png',
+      direccion: 'https://ahorcado-marco3islas.netlify.app/',
+    },
+    {
+      nombre: 'Mi bateria',
+      descripcion: 'App que emula una bateria, hecha HTML, CSS# y JavaScript',
+      img: 'assets/img/mi-bateria.png',
+      direccion: 'https://mibateria.netlify.app/',
+    },
+    {
+      nombre: 'Simonazo',
+      descripcion: 'Juego que simula el clasico Simon Dice, hecho con Jquery',
+      img: 'assets/img/simonazo.png',
+      direccion: 'https://simonazo.netlify.app/',
+    },
   ];
   constructor(){
     console.log('Servicio listo para usar!');
