@@ -1,0 +1,114 @@
+body {
+    background: #141d27;
+    color: white;
+}
+.pagenofound{
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h2, h3, h4{
+  letter-spacing: 6px;
+  color: white;
+}
+p, span{
+  font-family: 'Roboto', sans-serif;
+}
+.btn{
+  width: 150px;
+    height: auto;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, serif;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding-top: 4px;
+    border: 1px solid white;
+    transition: all 2ms ease-in-out;
+    text-decoration: none;
+}
+.btn-back{
+    background-color: #7A0513;
+    padding: 5px 10px;
+    text-align: center;
+}
+.btn-back:hover{
+    border: none;
+    filter: drop-shadow(0 0 1px gray);
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+.fast {
+  animation-duration: 0.4s;
+  animation-fill-mode: both;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+.flash {
+  animation-name: flash;
+}
+.fadeOut {
+  animation-name: fadeOut;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+.pulse {
+  animation-name: pulse;
+  animation-timing-function: ease-in-out;
+}
+.fadeOut{
+  animation-name: fadeOut;
+  display: none;
+}
+
+
+/*# sourceMappingURL=styles.css.map*/
